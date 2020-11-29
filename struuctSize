@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+struct Emp
+{
+    int eid;
+    char ename[20];
+    float salary;
+};
+
+
+int main()
+{   
+    struct Emp e;
+    printf("Size of emp id is %d\n",sizeof(e.eid));
+    printf("Size of ename is %d\n",sizeof(e.ename));
+    printf("Size of salary is %d\n",sizeof(e.salary));
+    printf("Size of structure is %d",sizeof(e));
+
+    return 0;
+}
